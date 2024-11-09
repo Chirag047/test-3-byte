@@ -1,0 +1,110 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(135deg, #ff7b7b, #6a6aff);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .events-page {
+    width: 80%;
+    max-width: 1200px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  /* Heading Styles */
+  .events-heading {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  /* Event Container (Grid Layout) */
+  .events-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  /* Event Card Styles */
+.event-card {
+  display: flex;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  padding: 20px;
+  align-items: center; /* This centers the content vertically */
+}
+
+.event-card:hover {
+  transform: scale(1.05);
+}
+
+/* Make the image circular and center it */
+.event-image {
+  width: 120px; /* size of the circle */
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%; /* This makes the image circular */
+  margin-right: 20px; /* space between the image and event details */
+  flex-shrink: 0; /* prevents shrinking of the image */
+}
+
+/* Event Info Styling */
+.event-info {
+  flex: 1; /* takes up remaining space on the right */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Other styles remain the same */
+.event-name {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #ffea00;
+}
+
+.event-description {
+  font-size: 1rem;
+  margin: 15px 0;
+  color: #ccc;
+}
+
+.event-details p {
+  font-size: 0.9rem;
+  margin: 5px 0;
+}
+
+.event-details strong {
+  color: #ffea00;
+}
+
+.join-button {
+  margin-top: 15px;
+  background-color: #ff7b7b;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.join-button:hover {
+  background-color: #ff4c4c;
+}
