@@ -1,0 +1,102 @@
+/* General styles for the first React project */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f6f6f6;
+}
+
+.container {
+  margin: auto;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 50px;
+}
+
+.socialive-text {
+  font-size: 36px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+
+.socialive-text span {
+  color: #0a7af1;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-link {
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #666;
+}
+
+.animated-btn {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border: 2px solid black;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: bold;
+  color: black;
+  margin: 40px 0 10px;
+}
+
+.subtitle {
+  font-size: 24px;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .socialive-text { font-size: 28px; }
+  .nav-links { gap: 10px; }
+  .nav-link { font-size: 16px; }
+  .title { font-size: 36px; }
+  .subtitle { font-size: 20px; }
+  .animated-btn { font-size: 14px; padding: 10px 20px; }
+}
+
+@media (max-width: 480px) {
+  .navbar { flex-direction: column; align-items: center; }
+  .title { font-size: 28px; }
+  .subtitle { font-size: 18px; }
+  .nav-links { flex-direction: column; gap: 15px; }
+  .animated-btn { font-size: 14px; padding: 8px 16px; }
+}
