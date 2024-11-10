@@ -81,8 +81,7 @@ function App() {
               <div key={event._id} className="event-card">
                 <h3>{event.hobby}</h3>
                 <p>Distance: {event.distance} km</p>
-                <p>Max Participants: {event.maxAttendees}</p>
-                <p>Participants: {event.participants}</p>
+                <p>Participants: {event.Participants}</p>
                 <button 
                   className="join-btn" 
                   onClick={() => handleJoinEvent(event._id)}
