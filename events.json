@@ -1,0 +1,17 @@
+[
+  {
+    "distance": 25,
+    "hobby": "House Parties",
+    "maxParticipants": "7"
+  },
+  {
+    "distance": "14",
+    "hobby": "Gaming",
+    "maxParticipants": "14"
+  },
+  {
+    "distance": "17",
+    "hobby": "Sports Events",
+    "maxParticipants": 10
+  }
+]

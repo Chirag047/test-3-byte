@@ -1,0 +1,50 @@
+    /* EventsList.css */
+    .events-list {
+        margin: 20px auto;
+        max-width: 1200px;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .event-cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+    
+    .event-card {
+        width: 280px;
+        padding: 20px;
+        border-radius: 8px;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: left;
+    }
+    
+    .event-card h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        color: #0a7af1;
+    }
+    
+    .event-card p {
+        font-size: 16px;
+        margin: 5px 0;
+    }
+    
+    .join-btn {
+        background-color: #0a7af1;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100%;
+        font-size: 16px;
+    }
+    
+    .join-btn:hover {
+        background-color: #005bb5;
+    }
+    
